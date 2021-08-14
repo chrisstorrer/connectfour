@@ -3,7 +3,9 @@
 #board td {
   width: 50px;
   height: 50px;
-  border: solid 1px #666;
+  border: inset 5px rgb(111, 129, 219);
+  border-radius: 50%;
+  
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -13,22 +15,50 @@
   margin: 5px;
   width: 80%;
   height: 80%;
+  /* Additional Piece Styles */
+  
+
 }
 
 .player1 {
-  background-color: #f30909;
+  /* background-color: #f30909; */
+  background:linear-gradient(rgba(173, 34, 99, 0.4), rgb(255, 0, 0));
 }
 
 .player2 {
-  background-color: #0808ff;
+  /* background-color: #0808ff; */
+  background:linear-gradient(rgb(34, 120, 173), rgb(0, 0, 255));
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: inset 5px rgba(255, 11, 11, 0.6);
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background:radial-gradient(rgba(173, 34, 34, 0.358), rgba(0, 0, 255, 0.296));
+  /* background-color: gold; */
+}
+
+/* Additional Styles */
+html{
+  background:radial-gradient(rgba(173, 34, 34, 0.358), rgba(0, 0, 255, 0.296));
+}
+header{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  /* border: solid 2px rgb(21, 0, 255); */
+  border-collapse: collapse;
+  background: repeating-linear-gradient(rgba(130, 112, 112, 0.117), rgba(102, 102, 234, 0.2));
+}
+.currPlayer{
+  font-size: larger;
+  font-weight: bold;
+  
 }
